@@ -1,0 +1,22 @@
+int smallPoint=10;
+int largePoint=40;
+
+PImage img;
+void setup(){
+ size(1620,1080);
+ img=loadImage("minato.jpg");
+ noStroke();
+ background(255);
+ frameRate(1000000000);
+ 
+}
+void draw(){
+
+int x=int(random(img.width));
+int y=int(random(img.height));
+color c=img.get(x,y);
+fill(c);
+ellipse(x,y,10,10);
+
+
+}
